@@ -1,0 +1,15 @@
+{% extends 'basicapp/base.html' %}
+<!-- inheriting from the base html template, the navigation bar. 
+Then, beginning content that will be palced inside the bodyblock tags in base.html -->
+{% block body_block %}
+
+<!-- bootstrap 3.0 class used to make it look neat -->
+<div class="container">
+	<h1>This page can only be viewed by registered users</h1>
+	<h2>Congratulations on adding your credentials to the database</h2>
+	<h2>Additional content is in the making</h2>
+	<a href="{% url 'index' %}">Click here to go back to the main page</a>
+</div>
+
+
+{% endblock %}
