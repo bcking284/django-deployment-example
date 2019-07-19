@@ -2,8 +2,9 @@
 {% load staticfiles %}
 
 {% block body_block %}
+<div class="container">
 <div class="jumbotron">
-	{% if 'registered' %}
+	{% if registered %}
 		<div class="container">
 		<h1>Thank you for registering!</h1>
 		</div>
@@ -18,5 +19,6 @@
 			<input type="submit" name="" value="Register">
 		</form>
 	{% endif %}
+</div>
 </div>
 {% endblock %}
